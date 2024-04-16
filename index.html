@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Hasnain Ali.</a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+    </header>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Hasnain Ali</h1>
+        <p>WEB <span>DEVELOPER</span></p>
+        <p>
+          The web developer with a focus on creating dynamic and user-centric
+          websites. Proficient in HTML, CSS, JavaScript, and various frameworks
+          like React and Node.js. My expertise extends to both front-end and
+          back-end development, allowing me to create seamless and responsive
+          online experiences. I have a strong command of version control systems
+          like Git and possess a solid understanding of database management
+          using technologies such as MySQL.
+        </p>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/profile.php?id=100009349462008"
+            target="_blank"
+            ><img src="images/facebook.png" alt="facebook-logo"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/hasnain-ali-594803290/"
+            target="_blank"
+            ><img src="images/linkedin.png" alt="linkedin-logo"
+          /></a>
+          <a href="https://www.instagram.com/hasnain_ali_6/" target="_blank"
+            ><img src="images/insta.png" alt="insta-logo"
+          /></a>
+        </div>
+        <a href="./Hasnain Ali Resume.pdf" class="btn" download="Resume"
+          >Download CV</a
+        >
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about_row">
+          <div class="about_col_1">
+            <img src="images/about1.png" alt="" />
+          </div>
+          <div class="about_col_2">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I'm Here To Help Your Next Project:</h3>
+            <p>
+              Greetings! I'm Hasnain Ali, a dedicated web developer and
+              ticketing agent on a mission to bridge the digital world with
+              seamless experiences. Armed with a degree in Software Engineering,
+              I am passionate about crafting code that not only functions
+              flawlessly but also enhances user interactions. As a web
+              developer, I thrive on turning visions into reality, creating
+              responsive and visually appealing websites that leave a lasting
+              impression. Simultaneously, my role as a ticketing agent has honed
+              my organizational and problem-solving skills, ensuring smooth
+              transactions and customer satisfaction. Join me on this
+              tech-driven journey where I merge the realms of software
+              engineering and customer service to deliver innovative solutions.
+              Let's build the future, one line of code and one satisfied
+              customer at a time.
+            </p>
+
+            <div class="tabs_titles">
+              <p
+                class="tab_links active_link"
+                onclick="opentab('skills', event)"
+              >
+                Skills
+              </p>
+              <p class="tab_links" onclick="opentab('experience', event)">
+                Experience
+              </p>
+              <p class="tab_links" onclick="opentab('education', event)">
+                Education
+              </p>
+            </div>
+            <div class="tabs_contents active_tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-End Developer</span><br />HTML, CSS, JavaScript,
+                  ReactJS
+                </li>
+                <li><span>Back-End Developer</span><br />Python, JavaScript</li>
+                <li><span>Ticketing Consultant</span><br />Gelileo</li>
+              </ul>
+            </div>
+
+            <div class="tabs_contents" id="experience">
+              <ul>
+                <li>
+                  <span>Apr 2024 - current </span><br />Internship Code Alpha
+                  Company in Front-End Developer
+                </li>
+                <li>
+                  <span>2023 - Current</span><br />Sindh Madressatul Islam
+                  University Project in Back-End Developer.
+                </li>
+                <li>
+                  <span>2024 - 2025 </span><br />G17 University Ambassador in
+                  Sindh Madressatul Islam University
+                </li>
+                <li>
+                  <span>2022 - 2023</span><br />Travel Consultant in Fazal-E-Haq
+                  Travel & Tours Pilgrim (PVT) Limited
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabs_contents" id="education">
+              <ul>
+                <li>
+                  <span>High School / Science Group. - 2019</span><br />
+                  Al-Rasheed Public Secondary School
+                </li>
+                <li>
+                  <span>Intermediate / Pre-Engineering. 2019 - 2021</span><br />
+                  Govt.Degree Boys College No.1 Gulistan-e-jahur
+                </li>
+                <li>
+                  <span>Bachelor of Software Engineering. 2023 - Present </span
+                  ><br />
+                  Sindh Madressatul Islam University
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <h1 class="ser-title">
+          <span>My<strong> Services</strong></span>
+        </h1>
+        <div class="services_list">
+          <div class="services_box">
+            <i class="bx bxl-windows"></i>
+            <h2>Website Design and Development</h2>
+            <p>
+              Crafting visually appealing and functional websites tailored to
+              clients' needs and preferences.
+            </p>
+            <a href="#">Learn more <i class="bx bx-link-external"></i></a>
+          </div>
+          <div class="services_box">
+            <i class="bx bx-palette"></i>
+            <h2>Responsive Design</h2>
+            <p>
+              Ensuring that websites are optimized to display seamlessly across
+              various devices, including desktops, laptops, tablets, and
+              smartphones.
+            </p>
+            <a href="#">Learn more <i class="bx bx-link-external"></i></a>
+          </div>
+          <div class="services_box">
+            <i class="bx bx-globe"></i>
+            <h2>Custom Web Application Development</h2>
+            <p>
+              Building bespoke web applications with unique features and
+              functionalities to meet specific business requirements.
+            </p>
+            <a href="#">Learn more <i class="bx bx-link-external"></i></a>
+          </div>
+          <div class="services_box">
+            <i class="bx bx-shopping-bag"></i>
+            <h2>E-commerce Solutions</h2>
+            <p>
+              Developing online stores with secure payment gateways, product
+              management systems, and intuitive shopping experiences to drive
+              sales and conversions.
+            </p>
+            <a href="#">Learn more <i class="bx bx-link-external"></i></a>
+          </div>
+          <div class="services_box">
+            <i class="bx bx-edit"></i>
+            <h2>API Development and Integration</h2>
+            <p>
+              Creating robust APIs and integrating them into web applications to
+              enable communication between frontend and backend systems or with
+              third-party services.
+            </p>
+            <a href="#">Learn more <i class="bx bx-link-external"></i></a>
+          </div>
+          <div class="services_box">
+            <i class="bx bx-fingerprint"></i>
+            <h2>Authentication and Authorization</h2>
+            <p>
+              Implementing secure authentication and authorization mechanisms to
+              control access to web applications and data.
+            </p>
+            <a href="#">Learn more <i class="bx bx-link-external"></i></a>
+          </div>
+          <div class="services_box">
+            <i class="bx bxs-data"></i>
+            <h2>Database Management</h2>
+            <p>
+              Designing, optimizing, and managing databases to efficiently store
+              and retrieve data for web applications.
+            </p>
+            <a href="#">Learn more <i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h1 class="ser-title">
+          <span>My<strong> Portfolio</strong></span>
+        </h1>
+        <div class="portfolio_list">
+          <div class="portfolio_box">
+            <img src="images/Resume Builder.png" alt="" />
+            <h3>Resume Builder</h3>
+            <p>
+              Python-based resume builder: Developed a Python script leveraging
+              libraries like PyPDF2 and docx to automate the generation of
+              professional resumes. Incorporated features for easy input of work
+              experience, education, and skills, producing polished resumes in
+              PDF or DOCX formats. Implemented customizable templates and
+              dynamic content generation for efficient customization, enhancing
+              users' ability to highlight their work achievements effectively.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+          <div class="portfolio_box">
+            <img src="images/Expense Tracker.png" alt="" />
+            <h3>Expense Tracker Website</h3>
+            <p>
+              Expense Tracker web application featuring sections for adding
+              transactions, displaying total balance, income, and expenses.
+              Users can input transaction details like name, amount, and date,
+              with separate sections for income and expense transactions.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+          <div class="portfolio_box">
+            <img src="images/Portfolio’s.png" alt="" />
+            <h3>Responsive Portfolio Website</h3>
+            <p>
+              A responsive portfolio website showcasing your work, built with
+              HTML, CSS, JavaScript, and React.js. Its sleek design and smooth
+              navigation highlight your projects effectively, providing an
+              engaging platform for potential clients or employers to explore
+              your portfolio.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+          <div class="portfolio_box">
+            <img src="images/Social Media Dashboard.png" alt="" />
+            <h3>Social Media Dashboard</h3>
+            <p>
+              "Social Media Dashboard: Integrating Facebook, YouTube, and
+              Instagram for streamlined monitoring of follower count, likes, and
+              engagement metrics."
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="ser-title">
+        <span>Contact<strong> Us</strong></span>
+      </h1>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="button" value="Send Message" class="btn" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Hasnain Ali | All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
